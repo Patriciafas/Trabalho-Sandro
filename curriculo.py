@@ -32,10 +32,10 @@ def gerar_html(nome, email, resumo, arq_experiencias, arq_habilidades):
     for e in experiencias:
         lista_exp += f"<li>{e.strip()}</li>"
 
-        arq = open(arq_habilidades, "r", encoding="utf-8")
-        habilidades = arq.readlines()
-        arq.close()
-        lista_hab = ""
+    arq = open(arq_habilidades, "r", encoding="utf-8")
+    habilidades = arq.readlines()
+    arq.close()
+    lista_hab = ""
     for h in habilidades:
         lista_hab += f"<li>{h.strip()}</li>"
 
